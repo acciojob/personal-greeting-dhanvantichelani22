@@ -9,7 +9,7 @@ const App = () => {
         {/* Do not remove the main div */}
         <p>Enter your name:</p>
         <input onChange={(e) => setName(e.target.value)}></input>
-        <p>Hello {name}!</p>
+        {name !== "" && <p>Hello {name}!</p>}
     </div>
   )
 }
